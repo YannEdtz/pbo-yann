@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Math; 
-
 class LuasLingkaran {
 
     public const phi = 3.14;
-    protected int $jari;
+    public int $jari;
     
     public function __construct($isiJari = 1) {
         $this->jari = $isiJari;
@@ -23,6 +21,12 @@ class LuasLingkaran {
 
     public function __destruct() {
         echo "<br/>";
-        echo "Selesai tanpa memulai";
+        echo "selesai tanpa memulai";
     }
 }
+
+$lingkaran = new LuasLingkaran(12);
+// $lingkaran->jari = 12;
+$lingkaran->tampil('roda'); //panggil method tampil
+
+LuasLingkaran::testing(); //panggil static method
